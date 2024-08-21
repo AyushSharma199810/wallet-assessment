@@ -1,0 +1,22 @@
+{
+  "name": "wallet-utils",
+  "version": "0.0.2",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx pkg --compress GZip -t node16-linux-x64 -o dist/wallet-utils index.js"
+  },
+  "bin": "index.js",
+  "dependencies": {
+    "arg": "^5.0.2",
+    "bip39": "^3.0.4",
+    "ethers": "^5.7.1",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
